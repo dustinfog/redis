@@ -5,6 +5,8 @@ import (
 	"time"
 )
 
+//todo Acquiring status for repeated use, default status to Acquiring
+//todo may be lock for embeded in other object, needed to argument
 type WhisperLockStatus int
 
 const (
