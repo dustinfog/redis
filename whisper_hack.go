@@ -9,6 +9,6 @@ func (cmd *baseCmd) SetArgs(args []interface{}) {
 	cmd._args = args
 }
 
-func (pipe *Pipeline) SetProcessor(fn func(Cmder) error) {
-	pipe.setProcessor(fn)
+func (pipe *Pipeline) Cmds() []Cmder {
+	return pipe.cmds
 }
